@@ -7,7 +7,32 @@
   xxl: 1400px
 );*/
 
+@import url(navabar.css);
 
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* debug */
+    min-height: 100px;
+    border: 1px solid black;
+}
+
+.section .bg-jumbo{
+    background-image: url("../img/jumbo-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+}
+
+.section .bg-cooperative{
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
