@@ -44,7 +44,7 @@ body{
 }
 
 .bg-jumbo + .container .jumbo-bg-content{
-    padding-top: 17rem;
+    padding-top: 20rem;
     padding-bottom: 3rem;
 }
 
@@ -84,4 +84,20 @@ body{
     top: 0;
     bottom: 0;
     height: 100%;
+}
+
+
+footer .img-language{
+    width: 20px;
+    margin-right: 1rem;
+}
+
+footer .footer-list{
+    list-style: none;
+}
+
+footer .footer-list li a{
+    color: white;
+    text-decoration: none;
+    
 }
