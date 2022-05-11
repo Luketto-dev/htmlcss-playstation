@@ -14,6 +14,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* my utility */
+
 .bg_grey{
     background-color: #BEBCBB;
 }
@@ -27,7 +29,7 @@ body{
     padding-bottom: 3rem;
 }
 
-
+/* bg-jumbo */
 .section .bg-jumbo{
     position: absolute;
     top: 0;
@@ -48,11 +50,14 @@ body{
     padding-bottom: 3rem;
 }
 
+
+/* slider */
 .slider .slider-img{
     width: 100%;
     border-radius: 20px;
 }
 
+/* bg-cooperative */
 .section.bg-cooperative{
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
     background-size: cover;
@@ -65,12 +70,31 @@ body{
     padding-bottom: 2rem;
 }
 
-
+/* card-new-release */
 .card-new-releases img{
     width: 100%;
     border-radius: 20px;
     object-fit: cover;
+    padding-bottom: .5rem;
 }
+
+.card-ps5{
+    height: 100%;
+}
+
+.card-ps5 a{
+    display: inline-block;
+    height: 100%;
+    border-bottom: 2px solid white;
+    opacity: .7;
+}
+
+.card-ps5 a:focus{
+    border-bottom: 2px solid #0d6efd;
+    opacity: 1;
+}
+
+
 
 .btn-light {
     color: #376BE5;
@@ -87,6 +111,7 @@ body{
 }
 
 
+/* footer */
 footer .img-language{
     width: 20px;
     margin-right: 1rem;
