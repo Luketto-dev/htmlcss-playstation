@@ -7,32 +7,81 @@
   xxl: 1400px
 );*/
 
+
 @import url(navabar.css);
 
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.section{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    /* debug */
-    min-height: 100px;
-    border: 1px solid black;
+.bg_grey{
+    background-color: #BEBCBB;
 }
+
+.bg_dark_blue{
+    background-color: #161C3B;
+}
+
+.section:not(.full-height){
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 
 .section .bg-jumbo{
-    background-image: url("../img/jumbo-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 85vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
-.section .bg-cooperative{
+.section .bg-jumbo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.bg-jumbo + .container .jumbo-bg-content{
+    padding-top: 17rem;
+    padding-bottom: 3rem;
+}
+
+.slider .slider-img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.section.bg-cooperative{
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.section.bg-cooperative img{
+    width: 60%;
+    padding-bottom: 2rem;
+}
+
+
+.card-new-releases img{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.btn-light {
+    color: #376BE5;
+    background-color: #D9DADC;
+    border-color: #D9DADC;
+}
+
+.banner-img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
