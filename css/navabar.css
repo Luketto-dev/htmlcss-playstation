@@ -12,6 +12,10 @@ header .logo-sony{
     width: 100px;
 }
 
+nav{
+    position: relative;
+}
+
 /* nav / main menu*/
 nav .main-menu{
     position: fixed;
@@ -19,6 +23,8 @@ nav .main-menu{
     right: 0;
     left: 0;
     transform: translateY(-150%);
+    z-index: -1;
+    
 }
 
 nav .main-menu ul{
@@ -91,7 +97,6 @@ nav .main-menu ul.menu-right{
         justify-content: space-between;
         flex-grow: 1;
         align-items: center;
-        transition: transform 0s;
     }
 
     nav .main-menu ul{
@@ -100,7 +105,6 @@ nav .main-menu ul.menu-right{
 
     nav .main-menu ul.menu-right{
         flex-direction: row;
-        align-items: flex-start;
         align-items: center;
     }
 }

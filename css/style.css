@@ -63,7 +63,7 @@ body{
 .slider .slider-link{
     display: inline-block;
     opacity: .8;
-    transition: all .4s;
+    transition: all .3s;
     border-radius: 20px;
     border: 2px solid transparent;
 }
