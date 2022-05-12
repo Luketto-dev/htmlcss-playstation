@@ -12,20 +12,26 @@
 </head>
 <body>
     <header>
-        <!-- blocco scuso -->
+        <!-- blocco scuro icona sony -->
         <div class="container-fluid bg-black text-end py-1">
             <img class="logo-sony" src="img/sony_logo.svg" alt="">
         </div>
         <div class="container-fluid pt-2">
-            <!-- navbar -->
-            <nav class="d-flex justify-content-between fw-bold">
-                <div class="d-flex align-items-center">
-                    <!-- logo -->
-                    <div class="logo">
-                        <img src="img/play_logo.svg" alt="">
-                    </div>
+            <nav class="position-relative">
+                <!-- hamburger in absolute -->
+                <div class="hamburger-menu d-lg-none" tabindex="-1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> 
+
+                <div class="logo">
+                    <img src="img/play_logo.svg" alt="">
+                </div>
+                <!-- main menu -->
+                <div class="main-menu">
                     <!-- menu sinistra -->
-                    <ul class="main-menu d-none d-lg-flex">
+                    <ul class="menu-left">
                         <li class="main-menu-items">
                             <a class="main-menu-link" href="">
                                 <span>Giochi</span>
@@ -63,40 +69,35 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-                <!-- menu destra -->
-                <ul class="main-menu d-none d-lg-flex align-items-center">
-                    <li class="main-menu-items">
-                        <a class="main-menu-link" href="">
-                            <span>My PlayStation
-                            <span><img src="img/chevron-down-solid.svg" alt=""></span>
-                        </a>
-                    </li>
-                    <li class="main-menu-items">
-                        <a class="main-menu-link" href="">
-                            <div class="btn btn-dark rounded-pill">Accedi</div>
-                        </a>
-                    </li>
-                    <li class="main-menu-items">
-                        <a class="main-menu-link" href="">
-                            <span><img class="icon-lens" src="img/lens.svg" alt=""></span>
-                        </a>
-                    </li>
-                </ul>
-                <!--  -->
-                <div class="hamburger-menu d-lg-none">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <!-- menu destra -->
+                    <ul class="menu-right">
+                        <li class="main-menu-items">
+                            <a class="main-menu-link" href="">
+                                <span>My PlayStation
+                                <span><img src="img/chevron-down-solid.svg" alt=""></span>
+                            </a>
+                        </li>
+                        <li class="main-menu-items">
+                            <a class="main-menu-link" href="">
+                                <div class="btn btn-dark rounded-pill">Accedi</div>
+                            </a>
+                        </li>
+                        <li class="main-menu-items">
+                            <a class="main-menu-link" href="">
+                                <span><img class="icon-lens" src="img/lens.svg" alt=""></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
+        
         </div>
     </header>
 
     <main>
         <!-- section jumbotron -->
         <div class="section position-relative full-height">
-            <!-- parte con img di sfondo -->  
+            <!-- con back-img di sfondo -->  
             <div class="bg-jumbo">
                 <img src="img/jumbo-bg.png" alt="">
             </div>          
@@ -124,32 +125,32 @@
                 <div class="slider">
                     <div class="row gy-3 gx-4 row-cols-2 row-cols-sm-3 row-cols-lg-6">
                         <div class="col">
-                            <a href="">
+                            <a class="slider-link" href="">
                                 <img class="slider-img" src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
                             </a>
                         </div>
                         <div class="col">
-                            <a href="">
+                            <a class="slider-link" href="">
                                 <img class="slider-img" src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
                             </a>
                         </div>
                         <div class="col">
-                            <a href="">
+                            <a class="slider-link" href="">
                                 <img class="slider-img" src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
                             </a>
                         </div>
                         <div class="col">
-                            <a href="">
+                            <a class="slider-link" href="">
                                 <img class="slider-img" src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
                             </a>
                         </div>
                         <div class="col">
-                            <a href="">
+                            <a class="slider-link" href="">
                                 <img class="slider-img" src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
                             </a>
                         </div>
                         <div class="col">
-                            <a href="">
+                            <a class="slider-link" href="">
                                 <img class="slider-img" src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
                             </a>
                         </div>
@@ -183,7 +184,7 @@
                     <div class="col">
                         <div class="card-ps5 text-center">
                             <a class="text-dark text-decoration-none" href="javascript:void(0)">
-                                <img class="w-50" src="img/playstation-5-thumb.png" alt="">
+                                <img src="img/playstation-5-thumb.png" alt="">
                                 <div class="d-none d-md-block">Console PS5</div>
                             </a>
                         </div>
@@ -191,7 +192,7 @@
                     <div class="col">
                         <div class="card-ps5 text-center">
                             <a class="text-dark text-decoration-none" href="javascript:void(0)">
-                                <img class="w-50" src="img/joypad-thumb.png" alt="">
+                                <img src="img/joypad-thumb.png" alt="">
                                 <div class="d-none d-md-block">Controller wirelss Dualsense</div>
                             </a>
                         </div>
@@ -199,7 +200,7 @@
                     <div class="col">
                         <div class="card-ps5 text-center">
                             <a class="text-dark text-decoration-none" href="javascript:void(0)">
-                                <img class="w-50" src="img/headset-thumb.png" alt="">
+                                <img src="img/headset-thumb.png" alt="">
                                 <div class="d-none d-md-block">Cuffie wireless con microfono PULSE 3</div>
                             </a>
                         </div>
@@ -207,7 +208,7 @@
                     <div class="col">
                         <div class="card-ps5 text-center">
                             <a class="text-dark text-decoration-none" href="javascript:void(0)">
-                                <img class="w-50" src="img/remote-thumb.png" alt="">
+                                <img src="img/remote-thumb.png" alt="">
                                 <div class="d-none d-md-block">Telecomando media</div>
                             </a>
                         </div>
@@ -215,7 +216,7 @@
                     <div class="col">
                         <div class="card-ps5 text-center">
                             <a class="text-dark text-decoration-none" href="javascript:void(0)">
-                                <img class="w-50" src="img/camera-thumb.jpg" alt="">
+                                <img src="img/camera-thumb.jpg" alt="">
                                 <div class="d-none d-md-block">Telecamera HD</div>
                             </a>
                         </div>

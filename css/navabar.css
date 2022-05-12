@@ -1,17 +1,14 @@
+header{
+    position: sticky;
+    top: -32px;
+    background-color: white;
+    z-index: 10;
+    right: 0;
+    left: 0;
+}
+
 header .logo-sony{
     width: 100px;
-}
-
-nav .main-menu{
-    list-style: none;
-    margin: 0;
-}
-
-.main-menu-items .main-menu-link{
-    display: inline-block;
-    padding: .5rem;
-    text-decoration: none;
-    color: black;
 }
 
 .main-menu .main-menu-items .main-menu-link img{
@@ -22,7 +19,40 @@ nav .main-menu{
     width: 20px;
 }
 
+nav .main-menu{
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    transform: translatex(150%);
+    transition: all .6s ease-in;
+}
+
+nav .main-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .main-menu ul.menu-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-menu-items .main-menu-link{
+    display: inline-block;
+    padding: .5rem;
+    text-decoration: none;
+    color: black;
+}
+
 .hamburger-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
     border: 1px solid #888888;
     padding-right: .8rem;
     padding-left: .8rem;
@@ -30,12 +60,45 @@ nav .main-menu{
     border-radius: 5px;
     align-self: center;
     cursor: pointer;
+    margin-top: .5rem;
 }
 
 .hamburger-menu div{
     width: 20px;
     height: 2px;
-    background-color: #5a5a5a;
+    background-color: #363636;
     margin: 6px 0;
+}
+
+.hamburger-menu:focus ~ .main-menu{
+    transform: translateY(0);
+}
+
+
+@media screen and (min-width: 992px){
+    nav{
+        display: flex;
+        align-items: center;
+    }
+
+    nav .main-menu{
+        position: static;
+        background-color: white;
+        transform: translateX(0);
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    nav .main-menu ul{
+        display: flex;
+    }
+
+    nav .main-menu ul.menu-right{
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+    }
 }
 

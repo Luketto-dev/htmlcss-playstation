@@ -1,0 +1,39 @@
+/* card-new-release */
+.card-new-releases img{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    padding-bottom: .5rem;
+}
+
+
+/* card-ps5 */
+.card-ps5{
+    height: 100%;
+}
+
+.card-ps5 a{
+    display: inline-block;
+    height: 100%;
+    border-bottom: 2px solid white;
+    opacity: .7;
+    transition-property: border-bottom, opacity;
+    transition-duration: .4s;
+}
+
+/* card-ps5 focus */
+.card-ps5 a:focus{
+    border-bottom: 2px solid #0d6efd;
+    opacity: 1;
+}
+
+.card-ps5 img{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px){
+    .card-ps5 img{
+        width: 50%;
+    }
+}
