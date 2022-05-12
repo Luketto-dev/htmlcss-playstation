@@ -1,0 +1,47 @@
+.btn-danger,
+.btn-dark,
+.btn-primary{
+    border-width: 2px;
+}
+
+/* btn primary */
+.btn-primary:hover{
+    box-shadow: 0 0 0 2px #0d6efd;
+    border-color: white;
+}
+
+/* btn danger */
+.btn-danger:hover{
+    box-shadow: 0 0 0 2px #dc3545;;
+    border-color: white;
+}
+
+/* btn dark */
+.btn-dark:hover{
+    box-shadow: 0 0 0 2px #212529;;
+    border-color: white;
+}
+
+/* btn light */
+.btn-secondary {
+    color: #376BE5;
+    background-color: #D9DADC;
+    border-width: 2px;
+    border-color: #D9DADC;
+}
+
+.btn-secondary:hover{
+    box-shadow: 0 0 0 3px #D9DADC;
+    border-color: white;
+    color: #376BE5;
+    background-color: #cfcfcf;
+}
+
+.btn-secondary:focus {
+    color: #376BE5;
+    background-color: #cfcfcf;
+    border-color: white;
+    box-shadow: 0 0 0 0.25rem rgba(148, 148, 148, 0.5);
+}
+
+

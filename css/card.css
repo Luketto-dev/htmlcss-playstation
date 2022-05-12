@@ -1,4 +1,8 @@
 /* card-new-release */
+.card-new-releases{
+    transition: transform .3s ease-in;
+    cursor: pointer;
+}
 .card-new-releases img{
     width: 100%;
     border-radius: 20px;
@@ -6,6 +10,9 @@
     padding-bottom: .5rem;
 }
 
+.card-new-releases:hover{
+    transform: scale(1.1);
+}
 
 /* card-ps5 */
 .card-ps5{
@@ -19,6 +26,10 @@
     opacity: .7;
     transition-property: border-bottom, opacity;
     transition-duration: .4s;
+}
+
+.card-ps5 a:hover{
+    opacity: 1;
 }
 
 /* card-ps5 focus */

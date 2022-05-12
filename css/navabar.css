@@ -1,8 +1,9 @@
+/*  header */
 header{
     position: sticky;
-    top: -32px;
+    top: 0;
     background-color: white;
-    z-index: 10;
+    z-index: 2;
     right: 0;
     left: 0;
 }
@@ -11,22 +12,13 @@ header .logo-sony{
     width: 100px;
 }
 
-.main-menu .main-menu-items .main-menu-link img{
-    width: 10px;
-}
-
-.main-menu-items .main-menu-link img.icon-lens{
-    width: 20px;
-}
-
+/* nav / main menu*/
 nav .main-menu{
     position: fixed;
     background-color: white;
-    z-index: 1;
     right: 0;
     left: 0;
-    transform: translatex(150%);
-    transition: all .6s ease-in;
+    transform: translateY(-150%);
 }
 
 nav .main-menu ul{
@@ -34,6 +26,7 @@ nav .main-menu ul{
     margin: 0;
     padding: 0;
 }
+
 
 nav .main-menu ul.menu-right{
     display: flex;
@@ -49,6 +42,14 @@ nav .main-menu ul.menu-right{
     color: black;
 }
 
+.main-menu .main-menu-items .main-menu-link img{
+    width: 10px;
+}
+
+.main-menu-items .main-menu-link img.icon-lens{
+    width: 20px;
+}
+
 .hamburger-menu{
     position: absolute;
     right: 0;
@@ -58,7 +59,6 @@ nav .main-menu ul.menu-right{
     padding-left: .8rem;
     opacity: .5;
     border-radius: 5px;
-    align-self: center;
     cursor: pointer;
     margin-top: .5rem;
 }
@@ -72,6 +72,8 @@ nav .main-menu ul.menu-right{
 
 .hamburger-menu:focus ~ .main-menu{
     transform: translateY(0);
+    transition: transform .5s ease-in
+    
 }
 
 
@@ -89,6 +91,7 @@ nav .main-menu ul.menu-right{
         justify-content: space-between;
         flex-grow: 1;
         align-items: center;
+        transition: transform 0s;
     }
 
     nav .main-menu ul{

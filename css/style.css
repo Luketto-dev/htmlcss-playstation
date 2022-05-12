@@ -10,6 +10,7 @@
 
 @import url(navabar.css);
 @import url(card.css);
+@import url(button.css);
 
 
 body{
@@ -61,11 +62,21 @@ body{
 
 .slider .slider-link{
     display: inline-block;
-    transition: all .6s;
+    opacity: .8;
+    transition: all .4s;
+    border-radius: 20px;
+    border: 2px solid transparent;
 }
 
 .slider .slider-link:hover{
-    transform: translateY(-2.5rem)
+    transform: translateY(-1.3rem);
+    opacity: 1;
+    box-shadow: 0px 15px 10px 0px #888888;
+}
+
+.slider .slider-link:focus{
+    opacity: 1;
+    box-shadow: 0 0 1px 3px #0d6efd;
 }
 
 /* bg-cooperative */
@@ -81,12 +92,6 @@ body{
     padding-bottom: 2rem;
 }
 
-.btn-light {
-    color: #376BE5;
-    background-color: #D9DADC;
-    border-color: #D9DADC;
-}
-
 
 .banner-img{
     position: absolute;
@@ -95,8 +100,6 @@ body{
     bottom: 0;
     height: 100%;
 }
-
-
 
 
 /* footer */
