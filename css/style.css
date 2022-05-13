@@ -76,7 +76,7 @@ body{
 
 .slider .slider-link:focus{
     opacity: 1;
-    box-shadow: 0 0 1px 3px #0d6efd;
+    box-shadow: 0 0 1px 2px #0d6efd;
 }
 
 /* bg-cooperative */
