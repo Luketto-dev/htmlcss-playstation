@@ -78,7 +78,7 @@ nav .main-menu ul.menu-right{
 
 .hamburger-menu:focus ~ .main-menu{
     transform: translateY(0);
-    transition: transform .5s ease-in
+    transition: transform .4s ease-out
     
 }
 
